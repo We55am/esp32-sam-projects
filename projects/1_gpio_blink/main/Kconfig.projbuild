@@ -1,0 +1,16 @@
+menu "Project Configuration"
+
+    config APP_BLINK_GPIO
+        int "GPIO No."
+        default 13
+        help
+            GPIO number (IOxx) to blink on and off.
+
+    config APP_BLINK_PERIOD
+        int "Blink period in ms"
+        range 10 3600000
+        default 1000
+        help
+            Define the blinking period in milliseconds.
+
+endmenu

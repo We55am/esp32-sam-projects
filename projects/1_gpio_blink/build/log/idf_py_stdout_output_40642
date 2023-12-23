@@ -1,0 +1,130 @@
+[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7088
+load:0x40078000,len:15576
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1-rc2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Dec 23 2023 21:08:03[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09ac8h ( 39624) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=00019af0 vaddr=3ffb0000 size=02148h (  8520) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001bc40 vaddr=40080000 size=043d8h ( 17368) load[0m
+[0;32mI (132) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=14adch ( 84700) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00034b04 vaddr=400843d8 size=07a64h ( 31332) load[0m
+[0;32mI (183) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (195) cpu_start: Multicore app[0m
+[0;32mI (195) cpu_start: Pro cpu up.[0m
+[0;32mI (195) cpu_start: Starting app cpu, entry point is 0x400810d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (213) cpu_start: Pro cpu start user code[0m
+[0;32mI (213) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (213) cpu_start: Application information:[0m
+[0;32mI (218) cpu_start: Project name:     1_gpio_blink[0m
+[0;32mI (223) cpu_start: App version:      709ed01[0m
+[0;32mI (228) cpu_start: Compile time:     Dec 23 2023 21:17:50[0m
+[0;32mI (234) cpu_start: ELF file SHA256:  31fab6d594623d91...[0m
+[0;32mI (240) cpu_start: ESP-IDF:          v5.1-rc2-dirty[0m
+[0;32mI (246) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (251) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (256) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (268) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFB29B0 len 0002D650 (181 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (286) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 4008BE3C len 000141C4 (80 KiB): IRAM[0m
+[0;32mI (300) spi_flash: detected chip: generic[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;32mI (308) app_start: Starting scheduler on CPU0[0m
+[0;32mI (312) app_start: Starting scheduler on CPU1[0m
+[0;32mI (312) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (332) App Task: Setting GPIO LOW[0m
+[0;32mI (1332) App Task: Setting GPIO HIGH[0m
+[0;32mI (2332) App Task: Setting GPIO LOW[0m
+[0;32mI (3332) App Task: Setting GPIO HIGH[0m
+[0;32mI (4332) App Task: Setting GPIO LOW[0m
+[0;32mI (5332) App Task: Setting GPIO HIGH[0m
+[0;32mI (6332) App Task: Setting GPIO LOW[0m
+[0;32mI (7332) App Task: Setting GPIO HIGH[0m
+[0;32mI (8332) App Task: Setting GPIO LOW[0m
+[0;32mI (9332) App Task: Setting GPIO HIGH[0m
+[0;32mI (10332) App Task: Setting GPIO LOW[0m
+[0;32mI (11332) App Task: Setting GPIO HIGH[0m
+[0;32mI (12332) App Task: Setting GPIO LOW[0m
+[0;32mI (13332) App Task: Setting GPIO HIGH[0m
+[0;32mI (14332) App Task: Setting GPIO LOW[0m
+[0;32mI (15332) App Task: Setting GPIO HIGH[0m
+[0;32mI (16332) App Task: Setting GPIO LOW[0m
+[0;32mI (17332) App Task: Setting GPIO HIGH[0m
+[0;32mI (18332) App Task: Setting GPIO LOW[0m
+[0;32mI (19332) App Task: Setting GPIO HIGH[0m
+[0;32mI (20332) App Task: Setting GPIO LOW[0m
+[0;32mI (21332) App Task: Setting GPIO HIGH[0m
+[0;32mI (22332) App Task: Setting GPIO LOW[0m
+[0;32mI (23332) App Task: Setting GPIO HIGH[0m
+[0;32mI (24332) App Task: Setting GPIO LOW[0m
+[0;32mI (25332) App Task: Setting GPIO HIGH[0m
+[0;32mI (26332) App Task: Setting GPIO LOW[0m
+[0;32mI (27332) App Task: Setting GPIO HIGH[0m
+[0;32mI (28332) App Task: Setting GPIO LOW[0m
+[0;32mI (29332) App Task: Setting GPIO HIGH[0m
+[0;32mI (30332) App Task: Setting GPIO LOW[0m
+[0;32mI (31332) App Task: Setting GPIO HIGH[0m
+[0;32mI (32332) App Task: Setting GPIO LOW[0m
+[0;32mI (33332) App Task: Setting GPIO HIGH[0m
+[0;32mI (34332) App Task: Setting GPIO LOW[0m
+[0;32mI (35332) App Task: Setting GPIO HIGH[0m
+[0;32mI (36332) App Task: Setting GPIO LOW[0m
+[0;32mI (37332) App Task: Setting GPIO HIGH[0m
+[0;32mI (38332) App Task: Setting GPIO LOW[0m
+[0;32mI (39332) App Task: Setting GPIO HIGH[0m
+[0;32mI (40332) App Task: Setting GPIO LOW[0m
+[0;32mI (41332) App Task: Setting GPIO HIGH[0m
+[0;32mI (42332) App Task: Setting GPIO LOW[0m
+[0;32mI (43332) App Task: Setting GPIO HIGH[0m
+[0;32mI (44332) App Task: Setting GPIO LOW[0m
+[0;32mI (45332) App Task: Setting GPIO HIGH[0m
+[0;32mI (46332) App Task: Setting GPIO LOW[0m
+[0;32mI (47332) App Task: Setting GPIO HIGH[0m
+[0;32mI (48332) App Task: Setting GPIO LOW[0m
+[0;32mI (49332) App Task: Setting GPIO HIGH[0m
+[0;32mI (50332) App Task: Setting GPIO LOW[0m
+[0;32mI (51332) App Task: Setting GPIO HIGH[0m
+[0;32mI (52332) App Task: Setting GPIO LOW[0m
+[0;32mI (53332) App Task: Setting GPIO HIGH[0m
+[0;32mI (54332) App Task: Setting GPIO LOW[0m
+[0;32mI (55332) App Task: Setting GPIO HIGH[0m
+[0;32mI (56332) App Task: Setting GPIO LOW[0m
+[0;32mI (57332) App Task: Setting GPIO HIGH[0m
+[0;32mI (58332) App Task: Setting GPIO LOW[0m
+[0;32mI (59332) App Task: Setting GPIO HIGH[0m
+[0;32mI (60332) App Task: Setting GPIO LOW[0m
+[0;32mI (61332) App Task: Setting GPIO HIGH[0m
+[0;32mI (62332) App Task: Setting GPIO LOW[0m
+[0;32mI (63332) App Task: Setting GPIO HIGH[0m
+[0;32mI (64332) App Task: Setting GPIO LOW[0m
+[0;32mI (65332) App Task: Setting GPIO HIGH[0m
+[0;32mI (66332) App Task: Setting GPIO LOW[0m
+[0;32mI (67332) App Task: Setting GPIO HIGH[0m

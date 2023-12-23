@@ -1,0 +1,13 @@
+[1/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/1_gpio_blink.c.obj
+[2/7] Linking C static library esp-idf/main/libmain.a
+[3/7] Generating ld/sections.ld
+[4/7] Building C object CMakeFiles/1_gpio_blink.elf.dir/project_elf_src_esp32.c.obj
+[5/7] Linking CXX executable 1_gpio_blink.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/sam/esp/esp-workspace/esp32-sam-projects/projects/1_gpio_blink/build/1_gpio_blink.bin
+[7/7] cd /home/sam/esp/esp-workspace/esp32-sam-projects/projects/1_gpio_blink/build/esp-idf/esptool_py && /home/sam/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/sam/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/sam/esp/esp-workspace/esp32-sam-projects/projects/1_gpio_blink/build/partition_table/partition-table.bin /home/sam/esp/esp-workspace/esp32-sam-projects/projects/1_gpio_blink/build/1_gpio_blink.bin
+1_gpio_blink.bin binary size 0x2c400 bytes. Smallest app partition is 0x100000 bytes. 0xd3c00 bytes (83%) free.

@@ -1,0 +1,63 @@
+[1/5] cd /home/sam/esp/esp-workspace/esp32-sam-projects/projects/1_gpio_blink/build/esp-idf/esptool_py && /home/sam/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/sam/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/sam/esp/esp-workspace/esp32-sam-projects/projects/1_gpio_blink/build/partition_table/partition-table.bin /home/sam/esp/esp-workspace/esp32-sam-projects/projects/1_gpio_blink/build/1_gpio_blink.bin
+1_gpio_blink.bin binary size 0x2c590 bytes. Smallest app partition is 0x100000 bytes. 0xd3a70 bytes (83%) free.
+[2/5] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/sam/esp/esp-workspace/esp32-sam-projects/projects/1_gpio_blink/sdkconfig
+Compiler supported targets: xtensa-esp32-elf
+
+-- Adding linker script /home/sam/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- App "bootloader" version: v5.1-rc2-dirty
+-- Adding linker script /home/sam/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/sam/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/sam/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/sam/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/sam/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script /home/sam/esp/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /home/sam/esp/esp-idf/components/bootloader /home/sam/esp/esp-idf/components/bootloader_support /home/sam/esp/esp-idf/components/efuse /home/sam/esp/esp-idf/components/esp_app_format /home/sam/esp/esp-idf/components/esp_common /home/sam/esp/esp-idf/components/esp_hw_support /home/sam/esp/esp-idf/components/esp_rom /home/sam/esp/esp-idf/components/esp_system /home/sam/esp/esp-idf/components/esptool_py /home/sam/esp/esp-idf/components/freertos /home/sam/esp/esp-idf/components/hal /home/sam/esp/esp-idf/components/log /home/sam/esp/esp-idf/components/bootloader/subproject/main /home/sam/esp/esp-idf/components/bootloader/subproject/components/micro-ecc /home/sam/esp/esp-idf/components/newlib /home/sam/esp/esp-idf/components/partition_table /home/sam/esp/esp-idf/components/soc /home/sam/esp/esp-idf/components/spi_flash /home/sam/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sam/esp/esp-workspace/esp32-sam-projects/projects/1_gpio_blink/build/bootloader
+[1/1] cd /home/sam/esp/esp-workspace/esp32-sam-projects/projects/1_gpio_blink/build/bootloader/esp-idf/esptool_py && /home/sam/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/sam/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/sam/esp/esp-workspace/esp32-sam-projects/projects/1_gpio_blink/build/bootloader/bootloader.bin
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/3] cd /home/sam/esp/esp-idf/components/esptool_py && /home/sam/.espressif/tools/cmake/3.24.0/bin/cmake -D IDF_PATH=/home/sam/esp/esp-idf -D "SERIAL_TOOL=/home/sam/.espressif/python_env/idf5.1_py3.10_env/bin/python;;/home/sam/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/sam/esp/esp-workspace/esp32-sam-projects/projects/1_gpio_blink/build -P /home/sam/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 1_gpio_blink.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.dev3
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: c8:f0:9e:19:df:30
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0003cfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26640 bytes to 16668...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076a3... (100 %)
+Wrote 26640 bytes (16668 compressed) at 0x00001000 in 0.5 seconds (effective 392.4 kbit/s)...
+Hash of data verified.
+Compressed 181648 bytes to 100235...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001c679... (28 %)
+Writing at 0x00021f3c... (42 %)
+Writing at 0x00027ba9... (57 %)
+Writing at 0x0002de5a... (71 %)
+Writing at 0x00035cba... (85 %)
+Writing at 0x0003b872... (100 %)
+Wrote 181648 bytes (100235 compressed) at 0x00010000 in 2.4 seconds (effective 595.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1203.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
